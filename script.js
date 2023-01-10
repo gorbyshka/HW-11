@@ -5,7 +5,7 @@ const arrLength = prompt('Введите длинну массива');
 for (let i = 0; i <= arrLength; i++) {
     const num =+ prompt('Введите число');
     arr[i] = num;
-    result = arr.filter(value => value < 2 || value >= 5).sort();
+    result = arr.filter(value => value < 2 || value >= 5).sort((a, b) => a - b);
 }
 
 console.log(result);
