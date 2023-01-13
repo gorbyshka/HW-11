@@ -1,11 +1,17 @@
 let arr = [];
-let result;
 const arrLength = prompt('Введите длинну массива');
 
 for (let i = 0; i <= arrLength; i++) {
-    const num =+ prompt('Введите число');
+    const num = + prompt('Введите число');
     arr[i] = num;
-    result = arr.filter(value => value < 2 || value >= 5).sort((a, b) => a - b);
 }
 
-console.log(result);
+arr.sort((a, b) => a - b);
+console.log(arr);
+if (arrLength < 1) {
+    console.log('error');
+} else {
+    arr.splice(1, 3);
+    console.log(arr);
+}
+
