@@ -1,8 +1,8 @@
 let arr = [];
-const arrLength = prompt('Введите длинну массива');
+const arrLength = Number(prompt('Введите длинну массива'));
 
 for (let i = 0; i <= arrLength; i++) {
-    const num = + prompt('Введите число');
+    const num =+ prompt('Введите число');
     arr[i] = num;
 }
 
